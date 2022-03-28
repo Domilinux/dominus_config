@@ -31,7 +31,8 @@ else:
 print("now we will mount said filesystems")
 
 os.system("mount " + a + " /mnt ")
-os.system("mount " + b + "/boot")
+os.system("mkdir /mnt/boot")
+os.system("mount " + b + " /mnt/boot")
 os.system("swapon " + e)
 
 
