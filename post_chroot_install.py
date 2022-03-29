@@ -23,5 +23,9 @@ os.system("grub-mkconfig -o /boot/grub/grub.cfg")
 # setting up my config and the system
 
 os.system("useradd + " input("what do you want to name your user : "))
-os.system("sudo pacman -S i3 alacritty lightdm lightdm-gtk-greeter rofi dmenu picom xorg xorg-xinit")
-
+os.system("pacman -S i3 alacritty lightdm lightdm-gtk-greeter rofi dmenu picom xorg xorg-xinit")
+os.system("pacman -S git xdg-user-dirs")
+a = input("Please input the name of your user again : ")
+os.system("mkdir /home/" + a)
+os.system("cd /home/" + a)
+os.system("xdg-user-dirs")
